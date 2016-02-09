@@ -1,3 +1,3 @@
 # MyFirst
 Trying to understand
-jh
+Learning GIT to start with
