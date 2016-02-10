@@ -1,0 +1,18 @@
+POST http://ml-scom.cloudapp.net:54723/TestWCFMTOM/Service1.svc HTTP/1.1
+MIME-Version: 1.0
+Content-Type: multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:596332ed-90fe-4e3c-9316-69ce78db74be+id=1";start-info="text/xml"
+Accept-Encoding: gzip, deflate
+SOAPAction: "http://tempuri.org/IService1/GetData"
+Expect: 100-continue
+Host: ml-scom.cloudapp.net:54723
+Content-Length: 400
+Connection: Keep-Alive
+
+
+--uuid:596332ed-90fe-4e3c-9316-69ce78db74be+id=1
+Content-ID: <http://tempuri.org/0>
+Content-Transfer-Encoding: 8bit
+Content-Type: application/xop+xml;charset=utf-8;type="text/xml"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetData xmlns="http://tempuri.org/"><value>99</value></GetData></s:Body></s:Envelope>
+--uuid:596332ed-90fe-4e3c-9316-69ce78db74be+id=1--
